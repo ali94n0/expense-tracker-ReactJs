@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #f6f6f6;
+  color: #0d1d2c;
+  width: 100%;
+  height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.topSection p {
+  font-weight: bold;
+}
+.resultSection {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.expenseBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 7px 10px;
+  width: 120px;
+  height: 60px;
+}
+.expenseBox span {
+  font-weight: bold;
+  color: #14b8a6;
+}
+.btn {
+  border: 1px solid #7e22ce;
+  color: #7e22ce;
+  background-color: #f3e8ff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.primary {
+  color: #fff;
+  border: none;
+  background-color: #7e22ce;
+  padding: 7px 10px;
+}
+.cancel {
+  border: 1px solid #dc2626;
+  color: #dc2626;
+  background-color: #fee2e2;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 170px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+input[type="radio"] {
+  margin-left: 10px;
+}
+.radioBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+}
+.radioBox label {
+  margin-left: 3px;
+  font-size: 12px;
+}
+.transaction {
+  border-radius: 5px;
+  background-color: #f1f5f9;
+  padding: 7px 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+  font-weight: bold;
+  border-right: 4px solid #14b8a6;
+}
+.search {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 7px 15px;
+  background-color: rgb(248, 248, 248);
+}
+.tnxForm input {
+  padding: 7px 15px;
 }
